@@ -40,5 +40,8 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "overrides": {
+    "@react-three/fiber": "^8.15.19"
   }
 }
