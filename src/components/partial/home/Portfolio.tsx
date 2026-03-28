@@ -43,8 +43,8 @@ const projects: Wp = {
       description:
         "A CLI tool that allows developers to generate icons from local images or from AI prompts using DALL-E API. It is built with TypeScript and is available on npm.",
       stack: [
-        "Typescript",
-        "Nest JS",
+        "TypeScript",
+        "NestJS",
         "Bun",
         "DALL-E API",
         "Sharp",
@@ -67,10 +67,10 @@ const projects: Wp = {
       description:
         "A backend library that allows developers to easily access TikTok API, login, fetch videos, user profiles, upload images, videos and more. It is built with TypeScript and is available on npm.",
       stack: [
-        "Typescript",
-        "NX Mono Repo",
-        "PNPM workspace",
-        "Roll up bundler",
+        "TypeScript",
+        "Nx monorepo",
+        "pnpm workspace",
+        "Rollup",
         "Verdaccio",
         "Jest",
       ],
@@ -91,19 +91,19 @@ const projects: Wp = {
       description:
         "Innovate Space is a software development firm that specializes in building web and mobile applications. This is the website remaster.",
       stack: [
-        "Next JS",
-        "Postgres",
-        "Prisma ORM",
-        "Next Auth",
-        "Motion",
+        "Next.js",
+        "PostgreSQL",
+        "Prisma",
+        "NextAuth.js",
+        "Framer Motion",
         "GSAP",
-        "Tanstack Query",
-        "Shadcn UI",
+        "TanStack Query",
+        "shadcn/ui",
         "Redux",
         "TypeScript",
         "Server Actions",
         "i18n",
-        "Tailwind",
+        "Tailwind CSS",
         "API routes",
         "Paystack",
       ],
@@ -120,17 +120,17 @@ const projects: Wp = {
       description:
         "Nahdi is a leading pharmacy chain in Saudi Arabia. This is the official website for the company.",
       stack: [
-        "Next JS",
+        "Next.js",
         "Redux",
         "TypeScript",
-        "Contentful CMS",
+        "Contentful",
         "Server Actions",
         "i18n",
-        "Tailwind",
+        "Tailwind CSS",
         "API routes",
-        "Amazon Payfort",
+        "Payfort",
         "Dynamic Yield",
-        "Bazaar Voice",
+        "Bazaarvoice",
         "Google Tag Manager",
       ],
       cover: nahdi,
@@ -147,18 +147,18 @@ const projects: Wp = {
         "Study Pal is an AI buddy that helps students or learners in general to study better and faster. It is a web app that uses AI to generate questions and answers based on the users input. It also goes ahead to summarize passages and generate question with various difficulty level and also modes like objective and subjectives.",
       stack: [
         "Gemini API",
-        "Next JS",
-        "Postgres",
-        "Prisma ORM",
-        "Next Auth",
-        "Paystack Gateway",
-        "Tanstack Query",
+        "Next.js",
+        "PostgreSQL",
+        "Prisma",
+        "NextAuth.js",
+        "Paystack",
+        "TanStack Query",
         "Redux",
         "TypeScript",
         "Server Actions",
-        "Tailwind",
+        "Tailwind CSS",
         "API routes",
-        "shadcn UI",
+        "shadcn/ui",
       ],
       cover: studypal,
       environment: [
@@ -174,14 +174,14 @@ const projects: Wp = {
       description:
         "A multivendor e-commerce market for buying and selling of building materials",
       stack: [
-        "Micro Frontend Architecture",
-        "Nx mono Repo",
+        "Microfrontend Architecture",
+        "Nx monorepo",
         "Angular",
-        "Woo commerce API",
-        "NGRX",
-        "RXJS",
-        "SASS",
-        "Tailwind",
+        "WooCommerce API",
+        "NgRx",
+        "RxJS",
+        "Sass",
+        "Tailwind CSS",
       ],
       cover: market,
       environment: [
@@ -196,13 +196,13 @@ const projects: Wp = {
       description:
         "Shopnest is a multivendor e-commerce platform that allows vendors to create their own stores and sell their products. This is the vendor portal where vendors can manage their stores, products, orders and more.",
       stack: [
-        "Ionic Framework",
+        "Ionic",
         "Capacitor",
         "TypeScript",
         "Angular",
-        "NGRX",
-        "RXJS",
-        "Web socket",
+        "NgRx",
+        "RxJS",
+        "WebSockets",
       ],
       cover: vendor,
       environment: [
@@ -217,12 +217,13 @@ const projects: Wp = {
       description:
         "Shopnest mall is a multivendor e-commerce platform where consumers can buy products from various vendors.",
       stack: [
-        "Ionic Framework",
+        "Ionic",
+        "Capacitor",
         "TypeScript",
         "Angular",
-        "NGRX",
-        "RXJS",
-        "Web socket",
+        "NgRx",
+        "RxJS",
+        "WebSockets",
       ],
       cover: mall,
       environment: [
@@ -237,14 +238,14 @@ const projects: Wp = {
       description:
         "This is a drag and drop project management board to keep track of tasks and their status",
       stack: [
-        "Micro Frontend",
-        "Nx mono Repo",
+        "Microfrontend Architecture",
+        "Nx monorepo",
         "Angular",
-        "DDD",
-        "Jest & Rxjs Marble",
-        "NGRX",
-        "RXJS",
-        "SASS",
+        "Domain-Driven Design",
+        "Jest",
+        "NgRx",
+        "RxJS",
+        "Sass",
       ],
       cover: kanban,
       environment: [
@@ -262,7 +263,7 @@ const projects: Wp = {
       name: "HSE Management Web App",
       description:
         "This is the Adminstrative end of the HSE Mobile App where the admin uploads and moderate App engagement and contents.",
-      stack: ["Angular", "NGRX", "RXJS", "SASS", "Adonis JS", "Postgres"],
+      stack: ["Angular", "NgRx", "RxJS", "Sass", "AdonisJS", "PostgreSQL"],
       cover: hse,
       environment: [
         {
@@ -279,7 +280,7 @@ const projects: Wp = {
       name: "Oil Perfumes Web App",
       description:
         "The oil perfumes web app is a classified e-commerce website strictly for Oil perfume vendors. The website also an administrative end for both owner and other vendors to manage their stores.",
-      stack: ["Angular", "RXJS", "SASS", "Bootstrap", "Express", "PHP", "aSQL"],
+      stack: ["Angular", "RxJS", "Sass", "Bootstrap", "Express.js", "PHP", "MySQL", "REST API"],
       cover: oil,
       environment: [
         {
@@ -292,7 +293,7 @@ const projects: Wp = {
       name: "Innovate Space Website",
       description:
         "The official website for Innovate space software development firm. The website features a vintage design with a smooth feel and look",
-      stack: ["React", "Next JS", "Email JS", "Nest JS", "Sass", "Postgres"],
+      stack: ["React", "Next.js", "EmailJS", "NestJS", "Sass", "PostgreSQL"],
       cover: nov,
       environment: [
         {
@@ -305,7 +306,7 @@ const projects: Wp = {
       name: "Multi Level Marketing Platform Web App",
       description:
         "A multilevel marketing platform that allows people earn as they refer more people on to the platform. Note that I do not have the backend code anymore so the github repo only contains the app frontend.",
-      stack: ["Angular", "RXJS", "Bootstrap", "CSS", "NODE JS", "MYSQL"],
+      stack: ["Angular", "RxJS", "Bootstrap", "CSS", "Node.js", "MySQL"],
       cover: mlm,
       environment: [
         {
@@ -322,7 +323,7 @@ const projects: Wp = {
       name: "Rest Countries App",
       description:
         "This is a challenge from frontend mentor. The web app basically fetches a list of countries via an API call and then displays the information to the user with ability to sort, search and also toggle theme.",
-      stack: ["Angular", "RXJS", "SASS", "Rest Countries API"],
+      stack: ["Angular", "RxJS", "Sass", "REST Countries API"],
       cover: rest,
       environment: [
         {
@@ -341,12 +342,12 @@ const projects: Wp = {
         "The oil perfumes mobile app is an ecommerce App that allows users easily find and buy perfumes from vendors within their region and also that matches their pocket.",
       stack: [
         "Kotlin",
-        "Jetpack Libraries",
+        "Android Jetpack",
         "Room",
         "Coroutines",
         "Dagger",
-        "Node JS",
-        "MYSQL",
+        "Node.js",
+        "MySQL",
         "MVVM",
       ],
       cover: oilapp,
@@ -363,11 +364,11 @@ const projects: Wp = {
         "Currncy converter App converts from one currency to another using the fixer API and also by default changes theme based on their user preference settings. It also caches result and is offline friendly",
       stack: [
         "Kotlin",
-        "Jetpack Libraries",
+        "Android Jetpack",
         "Room",
         "Coroutines",
         "Dagger",
-        "Converter Api",
+        "Fixer API",
       ],
       cover: curr,
       environment: [
@@ -383,11 +384,11 @@ const projects: Wp = {
         "The News App fetches paginated up-to-date news from the remote server and caches it locally on the user device their by supporting fully offline usage. The App also uses dual theme",
       stack: [
         "Kotlin",
-        "Jetpack Libraries",
+        "Android Jetpack",
         "Room",
-        "Coroutines & Flow",
+        "Coroutines",
         "Dagger Hilt",
-        "News Api",
+        "News API",
         "MVI",
       ],
       cover: news,
@@ -404,13 +405,13 @@ const projects: Wp = {
         "Whatsapp Clone App is a sample implementtation of whatsapp with a couple of features like profile creation, contact syncronization, messaging, offline use. This uses the socket.IO library for real time communication. ",
       stack: [
         "Kotlin",
-        "Jetpack Libraries",
+        "Android Jetpack",
         "Room",
         "Coroutines",
         "Dagger Hilt",
-        "Socket IO",
-        "Express",
-        "Mongo DB",
+        "Socket.IO",
+        "Express.js",
+        "MongoDB",
         "Docker Compose",
         "MVVM",
       ],
@@ -426,7 +427,7 @@ const projects: Wp = {
       name: "Ground Breaking App",
       description:
         "The ground breakinng App is an event app that is primarily built foruse only at the launching event of a popular estate in Awka",
-      stack: ["Flutter", "Bloc", "Build Runner", "Freeze", "RX Dart", "MVVM"],
+      stack: ["Flutter", "BLoC", "build_runner", "freezed", "rxdart", "MVVM"],
       cover: breakn,
       environment: [
         {
@@ -439,7 +440,7 @@ const projects: Wp = {
       name: "Mayuk Construction",
       description:
         "An informative website for a client who wants to be avaialable on the online space. No heavy requirements so i's pretty much basic.",
-      stack: ["Javascript", "HTML", "CSS", "Email JS"],
+      stack: ["JavaScript", "HTML", "CSS", "EmailJS"],
       cover: may,
       environment: [
         {
@@ -451,17 +452,13 @@ const projects: Wp = {
     {
       name: "Portfolio Website :)",
       description:
-        "My Portfolio website. This is pretty much the same website you are on at the moment. I guess it's part of what I have built afterall :)",
-      stack: ["React", "Next JS", "Styled Components"],
+        "A production-ready portfolio built with Flutter for both web and mobile, showcasing a polished responsive UI and fast performance.",
+      stack: ["Flutter", "Dart", "Flutter Web", "Flutter Mobile", "Responsive UI"],
       cover: pf,
       environment: [
         {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/My-portfolio-website",
-        },
-        {
           icon: "bx bx-link-alt",
-          link: "https://fidelischidera.com",
+          link: "https://my-portfolio-lemon-seven-80.vercel.app/",
         },
       ],
     },
@@ -470,8 +467,8 @@ const projects: Wp = {
     {
       name: "JWT Authentication Server",
       description:
-        "A sample project to show how to do authentication in Nest JS using JWT Tokens",
-      stack: ["Nest JS", "Postgres", "Docker"],
+        "A sample backend showing JWT authentication in NestJS with PostgreSQL and containerized deployment.",
+      stack: ["NestJS", "PostgreSQL", "Docker"],
       cover: hse,
       environment: [
         {
@@ -482,7 +479,8 @@ const projects: Wp = {
     },
     {
       name: "Facebook UI Clone",
-      description: "A sample clone of Facebooks mobile App home",
+      description:
+        "A Flutter mobile UI clone that demonstrates responsive layout, component design, and polished app styling.",
       stack: ["Flutter", "Dart"],
       cover: mlm,
       environment: [
@@ -495,8 +493,8 @@ const projects: Wp = {
     {
       name: "Crypto Promo Page",
       description:
-        "A sample project design for the landing page of a crypto promotion",
-      stack: ["Angular", "SASS"],
+        "A landing page concept built for a crypto promotion, optimized for performance and conversion.",
+      stack: ["Angular", "Sass"],
       cover: mlm,
       environment: [
         {
@@ -505,15 +503,15 @@ const projects: Wp = {
         },
         {
           icon: "bx bx-link-alt",
-          link: "promo-page.vercel.app",
+          link: "https://promo-page.vercel.app",
         },
       ],
     },
     {
       name: "Url Shortening",
       description:
-        "A sample project challenge from frontend mentor that enables users to generate a short version of any URL",
-      stack: ["HTML", "CSS", "Javascript"],
+        "A frontend challenge app that converts URLs into shortened links with clean, modern UX.",
+      stack: ["HTML", "CSS", "JavaScript"],
       cover: mlm,
       environment: [
         {
@@ -526,11 +524,10 @@ const projects: Wp = {
         },
       ],
     },
-
     {
       name: "Redux Only Chat App",
       description:
-        "A sample app that help master keey redux concepts like store, action, dispatch, middle-ware, state, reducers etc",
+        "A focused app for mastering Redux fundamentals, including store management, actions, reducers, and middleware.",
       stack: ["React", "Redux"],
       cover: mlm,
       environment: [
@@ -540,15 +537,15 @@ const projects: Wp = {
         },
         {
           icon: "bx bx-link-alt",
-          link: " https://Delis2001.github.io/redux-mastery/",
+          link: "https://Delis2001.github.io/redux-mastery/",
         },
       ],
     },
     {
       name: "Real Estate Landing Page",
       description:
-        "A sample landing page for a real estate promotion on social media and online generally",
-      stack: ["HTML", "SASS", "GSAP"],
+        "A polished promotional landing page for a real estate campaign, built for high engagement and visual impact.",
+      stack: ["HTML", "Sass", "GSAP"],
       cover: mlm,
       environment: [
         {
