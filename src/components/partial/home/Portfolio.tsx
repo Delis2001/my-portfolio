@@ -158,6 +158,32 @@ const projects: Wp = {
         },
       ],
     },
+    {
+      name: "Portfolio Website",
+      description:
+        "A professional portfolio website built with Next.js and TypeScript, showcasing Flutter development projects with modern UI and responsive design.",
+      stack: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Styled Components",
+        "Framer Motion",
+        "Responsive Design",
+        "SEO Optimization",
+        "Modern UI/UX",
+      ],
+      cover: pf,
+      environment: [
+        {
+          icon: "bx bx-link-alt",
+          link: "https://github.com/Delis2001/my-portfolio",
+        },
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/my-portfolio",
+        },
+      ],
+    },
   ],
   fun: [
     {
