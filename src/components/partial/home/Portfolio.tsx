@@ -21,6 +21,8 @@ import studypal from "../../../../public/assets/images/study_pal.png";
 import vendor from "../../../../public/assets/images/shopnest.png";
 import mall from "../../../../public/assets/images/mall.png";
 import tok from "../../../../public/assets/images/tok.png";
+import chatbot from "../../../../public/assets/images/chatbot1.png";
+import doova from "../../../../public/assets/images/doova1.png";
 import novate from "../../../../public/assets/images/novate.png";
 import noavicon from "../../../../public/assets/images/nova.png";
 import { Container } from "../../Container";
@@ -39,149 +41,18 @@ interface Wp {
 const projects: Wp = {
   featured: [
     {
-      name: "Icon Generator CLI npm package",
-      description:
-        "A CLI tool that allows developers to generate icons from local images or from AI prompts using DALL-E API. It is built with TypeScript and is available on npm.",
-      stack: [
-        "TypeScript",
-        "NestJS",
-        "Bun",
-        "DALL-E API",
-        "Sharp",
-        "Commander",
-      ],
-      cover: noavicon,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://www.npmjs.com/package/@innovatespace/nova-icon",
-        },
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/App-Icon-generator",
-        },
-      ],
-    },
-    {
-      name: "Tiktok Library npm package",
-      description:
-        "A backend library that allows developers to easily access TikTok API, login, fetch videos, user profiles, upload images, videos and more. It is built with TypeScript and is available on npm.",
-      stack: [
-        "TypeScript",
-        "Nx monorepo",
-        "pnpm workspace",
-        "Rollup",
-        "Verdaccio",
-        "Jest",
-      ],
-      cover: tok,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://www.npmjs.com/package/@innovatespace/tiktok",
-        },
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/os-libs-monorepo",
-        },
-      ],
-    },
-    {
-      name: "Innovate Space v2",
-      description:
-        "Innovate Space is a software development firm that specializes in building web and mobile applications. This is the website remaster.",
-      stack: [
-        "Next.js",
-        "PostgreSQL",
-        "Prisma",
-        "NextAuth.js",
-        "Framer Motion",
-        "GSAP",
-        "TanStack Query",
-        "shadcn/ui",
-        "Redux",
-        "TypeScript",
-        "Server Actions",
-        "i18n",
-        "Tailwind CSS",
-        "API routes",
-        "Paystack",
-      ],
-      cover: novate,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://innovate-v3.vercel.app",
-        },
-      ],
-    },
-    {
-      name: "Nahdi Pharmaceuticals",
-      description:
-        "Nahdi is a leading pharmacy chain in Saudi Arabia. This is the official website for the company.",
-      stack: [
-        "Next.js",
-        "Redux",
-        "TypeScript",
-        "Contentful",
-        "Server Actions",
-        "i18n",
-        "Tailwind CSS",
-        "API routes",
-        "Payfort",
-        "Dynamic Yield",
-        "Bazaarvoice",
-        "Google Tag Manager",
-      ],
-      cover: nahdi,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://nahdionline.com",
-        },
-      ],
-    },
-    {
-      name: "Study Pal",
-      description:
-        "Study Pal is an AI buddy that helps students or learners in general to study better and faster. It is a web app that uses AI to generate questions and answers based on the users input. It also goes ahead to summarize passages and generate question with various difficulty level and also modes like objective and subjectives.",
-      stack: [
-        "Gemini API",
-        "Next.js",
-        "PostgreSQL",
-        "Prisma",
-        "NextAuth.js",
-        "Paystack",
-        "TanStack Query",
-        "Redux",
-        "TypeScript",
-        "Server Actions",
-        "Tailwind CSS",
-        "API routes",
-        "shadcn/ui",
-      ],
-      cover: studypal,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://study-ai-rose.vercel.app",
-        },
-      ],
-    },
-
-    {
       name: "Build Africa",
       description:
-        "A multivendor e-commerce market for buying and selling of building materials",
+        "A multivendor e-commerce marketplace for buying and selling building materials, built with Flutter for cross-platform performance.",
       stack: [
-        "Microfrontend Architecture",
-        "Nx monorepo",
-        "Angular",
-        "WooCommerce API",
-        "NgRx",
-        "RxJS",
-        "Sass",
-        "Tailwind CSS",
+        "Flutter",
+        "Dart",
+        "BLoC Pattern",
+        "Firebase",
+        "Flutter Web",
+        "State Management",
+        "REST API Integration",
+        "Responsive Design",
       ],
       cover: market,
       environment: [
@@ -194,15 +65,16 @@ const projects: Wp = {
     {
       name: "Shopnest Vendor Portal",
       description:
-        "Shopnest is a multivendor e-commerce platform that allows vendors to create their own stores and sell their products. This is the vendor portal where vendors can manage their stores, products, orders and more.",
+        "A comprehensive vendor management portal for Shopnest multivendor e-commerce platform, built with Flutter for seamless cross-platform experience.",
       stack: [
-        "Ionic",
-        "Capacitor",
-        "TypeScript",
-        "Angular",
-        "NgRx",
-        "RxJS",
+        "Flutter",
+        "Dart",
+        "Provider",
         "WebSockets",
+        "Flutter Web",
+        "Real-time Communication",
+        "Dashboard UI",
+        "Data Management",
       ],
       cover: vendor,
       environment: [
@@ -215,15 +87,16 @@ const projects: Wp = {
     {
       name: "Shopnest Mall App",
       description:
-        "Shopnest mall is a multivendor e-commerce platform where consumers can buy products from various vendors.",
+        "Consumer-facing multivendor e-commerce mobile app where users can browse and purchase products from various vendors.",
       stack: [
-        "Ionic",
-        "Capacitor",
-        "TypeScript",
-        "Angular",
-        "NgRx",
-        "RxJS",
-        "WebSockets",
+        "Flutter",
+        "Dart",
+        "GetX",
+        "Payment Gateway Integration",
+        "Push Notifications",
+        "Local Storage",
+        "E-commerce Features",
+        "Mobile-First Design",
       ],
       cover: mall,
       environment: [
@@ -234,327 +107,95 @@ const projects: Wp = {
       ],
     },
     {
-      name: "Kanban Board",
+      name: "AI Chatbot",
       description:
-        "This is a drag and drop project management board to keep track of tasks and their status",
+        "An intelligent conversational AI chatbot built with Flutter, featuring natural language processing and real-time responses.",
       stack: [
-        "Microfrontend Architecture",
-        "Nx monorepo",
-        "Angular",
-        "Domain-Driven Design",
-        "Jest",
-        "NgRx",
-        "RxJS",
-        "Sass",
+        "Flutter",
+        "Dart",
+        "AI Integration",
+        "Chat UI",
+        "Real-time Messaging",
+        "State Management",
+        "API Integration",
+        "Natural Language Processing",
       ],
-      cover: kanban,
+      cover: chatbot,
       environment: [
+        {
+          icon: "bx bx-link-alt",
+          link: "https://github.com/Delis2001/aichatbot",
+        },
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/kanban-board",
-        },
-        {
-          icon: "bx bx-link-alt",
-          link: "https://kanban-board-inky.vercel.app",
+          link: "https://github.com/Delis2001/aichatbot",
         },
       ],
     },
     {
-      name: "HSE Management Web App",
+      name: "Doova App",
       description:
-        "This is the Adminstrative end of the HSE Mobile App where the admin uploads and moderate App engagement and contents.",
-      stack: ["Angular", "NgRx", "RxJS", "Sass", "AdonisJS", "PostgreSQL"],
-      cover: hse,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/HSE_ADMIN",
-        },
-        {
-          icon: "bx bx-link-alt",
-          link: "https://hse-admin-two.vercel.app/",
-        },
-      ],
-    },
-    {
-      name: "Oil Perfumes Web App",
-      description:
-        "The oil perfumes web app is a classified e-commerce website strictly for Oil perfume vendors. The website also an administrative end for both owner and other vendors to manage their stores.",
-      stack: ["Angular", "RxJS", "Sass", "Bootstrap", "Express.js", "PHP", "MySQL", "REST API"],
-      cover: oil,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://oilperfumes.ng/",
-        },
-      ],
-    },
-    {
-      name: "Innovate Space Website",
-      description:
-        "The official website for Innovate space software development firm. The website features a vintage design with a smooth feel and look",
-      stack: ["React", "Next.js", "EmailJS", "NestJS", "Sass", "PostgreSQL"],
-      cover: nov,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://innovatespace.co",
-        },
-      ],
-    },
-    {
-      name: "Multi Level Marketing Platform Web App",
-      description:
-        "A multilevel marketing platform that allows people earn as they refer more people on to the platform. Note that I do not have the backend code anymore so the github repo only contains the app frontend.",
-      stack: ["Angular", "RxJS", "Bootstrap", "CSS", "Node.js", "MySQL"],
-      cover: mlm,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/multilevel-market",
-        },
-        // {
-        //     icon: 'bx bx-link-alt',
-        //     link: 'https://github.com/blah'
-        // }
-      ],
-    },
-    {
-      name: "Rest Countries App",
-      description:
-        "This is a challenge from frontend mentor. The web app basically fetches a list of countries via an API call and then displays the information to the user with ability to sort, search and also toggle theme.",
-      stack: ["Angular", "RxJS", "Sass", "REST Countries API"],
-      cover: rest,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/Rest-countries",
-        },
-        {
-          icon: "bx bx-link-alt",
-          link: "https://rest-countries-Delis2001.vercel.app/",
-        },
-      ],
-    },
-    {
-      name: "Oil Perfumes Android App",
-      description:
-        "The oil perfumes mobile app is an ecommerce App that allows users easily find and buy perfumes from vendors within their region and also that matches their pocket.",
+        "A modern mobile application built with Flutter, showcasing advanced UI patterns and smooth user experience.",
       stack: [
-        "Kotlin",
-        "Android Jetpack",
-        "Room",
-        "Coroutines",
-        "Dagger",
-        "Node.js",
-        "MySQL",
-        "MVVM",
+        "Flutter",
+        "Dart",
+        "Material Design",
+        "State Management",
+        "Responsive UI",
+        "Animations",
+        "Local Database",
+        "Clean Architecture",
       ],
-      cover: oilapp,
+      cover: doova,
       environment: [
         {
           icon: "bx bx-link-alt",
-          link: "https://play.google.com/store/apps/details?id=oilperfumes.com.ng",
+          link: "https://github.com/Delis2001/doova",
         },
-      ],
-    },
-    {
-      name: "Currency Converter App",
-      description:
-        "Currncy converter App converts from one currency to another using the fixer API and also by default changes theme based on their user preference settings. It also caches result and is offline friendly",
-      stack: [
-        "Kotlin",
-        "Android Jetpack",
-        "Room",
-        "Coroutines",
-        "Dagger",
-        "Fixer API",
-      ],
-      cover: curr,
-      environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/currency_converter",
-        },
-      ],
-    },
-    {
-      name: "News App Android",
-      description:
-        "The News App fetches paginated up-to-date news from the remote server and caches it locally on the user device their by supporting fully offline usage. The App also uses dual theme",
-      stack: [
-        "Kotlin",
-        "Android Jetpack",
-        "Room",
-        "Coroutines",
-        "Dagger Hilt",
-        "News API",
-        "MVI",
-      ],
-      cover: news,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Innovate-Space/world_news",
-        },
-      ],
-    },
-    {
-      name: "Whatsapp Clone Android",
-      description:
-        "Whatsapp Clone App is a sample implementtation of whatsapp with a couple of features like profile creation, contact syncronization, messaging, offline use. This uses the socket.IO library for real time communication. ",
-      stack: [
-        "Kotlin",
-        "Android Jetpack",
-        "Room",
-        "Coroutines",
-        "Dagger Hilt",
-        "Socket.IO",
-        "Express.js",
-        "MongoDB",
-        "Docker Compose",
-        "MVVM",
-      ],
-      cover: nova,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/sleezChatApp",
-        },
-      ],
-    },
-    {
-      name: "Ground Breaking App",
-      description:
-        "The ground breakinng App is an event app that is primarily built foruse only at the launching event of a popular estate in Awka",
-      stack: ["Flutter", "BLoC", "build_runner", "freezed", "rxdart", "MVVM"],
-      cover: breakn,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/gve_ground_breaking",
-        },
-      ],
-    },
-    {
-      name: "Mayuk Construction",
-      description:
-        "An informative website for a client who wants to be avaialable on the online space. No heavy requirements so i's pretty much basic.",
-      stack: ["JavaScript", "HTML", "CSS", "EmailJS"],
-      cover: may,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://www.mayuk.info/",
-        },
-      ],
-    },
-    {
-      name: "Portfolio Website :)",
-      description:
-        "A production-ready portfolio built with Flutter for both web and mobile, showcasing a polished responsive UI and fast performance.",
-      stack: ["Flutter", "Dart", "Flutter Web", "Flutter Mobile", "Responsive UI"],
-      cover: pf,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://my-portfolio-lemon-seven-80.vercel.app/",
+          link: "https://github.com/Delis2001/doova",
         },
       ],
     },
   ],
   fun: [
     {
-      name: "JWT Authentication Server",
+      name: "Flutter Todo App",
       description:
-        "A sample backend showing JWT authentication in NestJS with PostgreSQL and containerized deployment.",
-      stack: ["NestJS", "PostgreSQL", "Docker"],
+        "A simple todo application built with Flutter and BLoC pattern, perfect for learning state management fundamentals.",
+      stack: ["Flutter", "Dart", "BLoC", "Hive", "Clean Architecture"],
       cover: hse,
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Innovate-Space/authentication_backend",
+          link: "https://github.com/your-username/flutter-todo-app",
         },
       ],
     },
     {
-      name: "Facebook UI Clone",
+      name: "Flutter Calculator",
       description:
-        "A Flutter mobile UI clone that demonstrates responsive layout, component design, and polished app styling.",
-      stack: ["Flutter", "Dart"],
+        "A clean and functional calculator app built with Flutter, demonstrating basic UI layout and state handling.",
+      stack: ["Flutter", "Dart", "StatefulWidget", "Math Expressions"],
       cover: mlm,
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/facebook_ui_clone_flutter",
+          link: "https://github.com/your-username/flutter-calculator",
         },
       ],
     },
     {
-      name: "Crypto Promo Page",
+      name: "Flutter Notes App",
       description:
-        "A landing page concept built for a crypto promotion, optimized for performance and conversion.",
-      stack: ["Angular", "Sass"],
+        "A simple notes application with local storage using Flutter and SQLite, great for beginners.",
+      stack: ["Flutter", "Dart", "SQLite", "Provider", "CRUD Operations"],
       cover: mlm,
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/promo_page",
-        },
-        {
-          icon: "bx bx-link-alt",
-          link: "https://promo-page.vercel.app",
-        },
-      ],
-    },
-    {
-      name: "Url Shortening",
-      description:
-        "A frontend challenge app that converts URLs into shortened links with clean, modern UX.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      cover: mlm,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Innovate-Space/URL-shortening-API-landing-page",
-        },
-        {
-          icon: "bx bx-link-alt",
-          link: "https://url-shortening-api-landing-page-sandy.vercel.app/",
-        },
-      ],
-    },
-    {
-      name: "Redux Only Chat App",
-      description:
-        "A focused app for mastering Redux fundamentals, including store management, actions, reducers, and middleware.",
-      stack: ["React", "Redux"],
-      cover: mlm,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/redux-mastery",
-        },
-        {
-          icon: "bx bx-link-alt",
-          link: "https://Delis2001.github.io/redux-mastery/",
-        },
-      ],
-    },
-    {
-      name: "Real Estate Landing Page",
-      description:
-        "A polished promotional landing page for a real estate campaign, built for high engagement and visual impact.",
-      stack: ["HTML", "Sass", "GSAP"],
-      cover: mlm,
-      environment: [
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/gve",
-        },
-        {
-          icon: "bx bx-link-alt",
-          link: "http://gve.vercel.app/",
+          link: "https://github.com/your-username/flutter-notes-app",
         },
       ],
     },

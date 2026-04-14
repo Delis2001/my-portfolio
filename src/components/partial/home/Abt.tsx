@@ -46,44 +46,55 @@ const Wrapper = styled.section.attrs({id: 'about'})`
     }
 
     .image_container{
-        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         display: block;
         position: relative;
-        width: 250px;
-        border-radius: 4px;
-        height: 300px;
+        width: 280px;
+        border-radius: 1rem;
+        height: 320px;
+        background: linear-gradient(135deg, ${({theme}: Props) => theme.expCard} 0%, ${({theme}: Props) => theme.expCardHover} 100%);
+        padding: 0.4rem;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.12), 0 5px 15px rgba(0,0,0,0.08);
 
         @media(min-width: 50em){
             &:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 25px 50px rgba(0,0,0,0.18), 0 10px 25px rgba(0,0,0,0.12);
+                
                 &::after{
-                    top:2em;
-                    left:2em;
+                    top:1.5em;
+                    left:1.5em;
+                    opacity: 0.8;
                 }
             }
     
             &::after{
                 z-index: -1;
                 position: absolute;
-                border: 2px solid ${({theme}: Props) => theme.expCardHover};
-                top:3em;
-                left:3em;
+                border: 3px solid ${({theme}: Props) => theme.expCardHover};
+                top:2em;
+                left:2em;
                 content: '';
                 height: inherit;
                 width: inherit;
                 border-radius: inherit;
-                transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                opacity: 0.6;
             }
         }
         img{
-            height:inherit;
-            object-fit: contain;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.6rem;
+            filter: grayscale(20%) brightness(1.05) contrast(1.1);
+            -webkit-filter: grayscale(20%) brightness(1.05) contrast(1.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover{
-                filter: grayscale(0%);
-                -webkit-filter: grayscale(0%);
+                filter: grayscale(0%) brightness(1.1) contrast(1.15);
+                -webkit-filter: grayscale(0%) brightness(1.1) contrast(1.15);
+                transform: scale(1.02);
             }
 
         }
@@ -104,15 +115,15 @@ const About= () => {
                         <div className="about__details">
                             <h2 className="section__title"><span className="deco">01. </span>  About me <span className="line"></span></h2>
                            <p>
-Hello! Thanks for taking the time to visit my portfolio. My name is Nwoye Fidelis Chidera, a passionate Flutter Developer focused on building modern, scalable mobile and web applications. I enjoy solving real-world problems through clean, efficient code and continuously improving my skills to deliver high-quality user experiences.
+Hello! Thanks for taking the time to visit my portfolio. I'm a passionate Flutter Developer focused on building modern, scalable mobile and web applications. I enjoy solving real-world problems through clean, efficient code and continuously improving my skills to deliver high-quality user experiences.
 </p>
 
 <p>
-I am committed to growing as a developer, with a strong interest in building performant applications and staying up-to-date with modern technologies and best practices.
+I am committed to growing as a developer, with a strong interest in building performant applications and staying up-to-date with modern technologies and best practices in the Flutter ecosystem.
 </p>
 
 <p>
-My core focus is Flutter and Dart for cross-platform development, along with experience in modern web technologies.
+My core focus is Flutter and Dart for cross-platform development, with extensive experience in building e-commerce solutions and real-time applications.
 </p>
 
 <p>
@@ -135,7 +146,7 @@ Below are some of the technologies, languages, and tools I work with:
                         </div>
                         <div className="about__me">
                             <div className="image_container">
-                                <Image src={kingsley} alt="Nwoye Fidelis Chidera" />
+                                <Image src={kingsley} alt="Flutter Developer Profile" />
                             </div>
                         </div>
                     </div>
