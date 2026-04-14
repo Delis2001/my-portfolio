@@ -22,7 +22,11 @@ import vendor from "../../../../public/assets/images/shopnest.png";
 import mall from "../../../../public/assets/images/mall.png";
 import tok from "../../../../public/assets/images/tok.png";
 import chatbot from "../../../../public/assets/images/chatbot1.png";
+import chatbot2 from "../../../../public/assets/images/chatbot2.png";
+import chatbot3 from "../../../../public/assets/images/chatbot3.png";
 import doova from "../../../../public/assets/images/doova1.png";
+import doova2 from "../../../../public/assets/images/doova2.png";
+import doova3 from "../../../../public/assets/images/doova3.png";
 import novate from "../../../../public/assets/images/novate.png";
 import noavicon from "../../../../public/assets/images/nova.png";
 import { Container } from "../../Container";
@@ -31,7 +35,7 @@ type Project = {
   name: string;
   description: string;
   stack: string[];
-  environment: { icon: string; link: string }[];
+  environment: { icon: string; link: string; title?: string }[];
   cover: StaticImageData;
 };
 interface Wp {
@@ -109,7 +113,7 @@ const projects: Wp = {
     {
       name: "AI Chatbot",
       description:
-        "An intelligent conversational AI chatbot built with Flutter, featuring natural language processing and real-time responses.",
+        "An intelligent conversational AI chatbot built with Flutter, featuring natural language processing and real-time responses with multiple UI screens showcasing different chat functionalities.",
       stack: [
         "Flutter",
         "Dart",
@@ -119,6 +123,7 @@ const projects: Wp = {
         "State Management",
         "API Integration",
         "Natural Language Processing",
+        "Multi-screen Design",
       ],
       cover: chatbot,
       environment: [
@@ -130,21 +135,27 @@ const projects: Wp = {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/aichatbot",
         },
+        {
+          icon: "bx bx-images",
+          link: "#chatbot-gallery",
+          title: "View More Screenshots"
+        },
       ],
     },
     {
       name: "Doova App",
       description:
-        "A modern mobile application built with Flutter, showcasing advanced UI patterns and smooth user experience.",
+        "A modern mobile application built with Flutter, showcasing advanced UI patterns, smooth animations, and professional user experience across multiple screens.",
       stack: [
         "Flutter",
         "Dart",
         "Material Design",
         "State Management",
         "Responsive UI",
-        "Animations",
+        "Advanced Animations",
         "Local Database",
         "Clean Architecture",
+        "Multi-screen Navigation",
       ],
       cover: doova,
       environment: [
@@ -155,6 +166,11 @@ const projects: Wp = {
         {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/doova",
+        },
+        {
+          icon: "bx bx-images",
+          link: "#doova-gallery",
+          title: "View More Screenshots"
         },
       ],
     },
@@ -314,6 +330,8 @@ const Wrapper = styled.section.attrs({ id: "portfolio" })`
         height: 100%;
         position: relative;
         border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       }
 
       &__content {
@@ -328,22 +346,26 @@ const Wrapper = styled.section.attrs({ id: "portfolio" })`
           font-size: 0.8rem;
           text-transform: uppercase;
           margin-bottom: 0.9em;
+          letter-spacing: 0.05em;
         }
 
         h3 {
           margin-bottom: 0.8em;
           font-size: 1.2rem;
+          font-weight: 600;
         }
 
         .project__card {
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px;
           background: ${({ theme }: Props) => theme.projectColor};
-          padding: 2em 1em;
-          border-radius: 6px;
+          padding: 2em 1.5em;
+          border-radius: 8px;
           margin-bottom: 0.8em;
+          border: 1px solid ${({ theme }: Props) => theme.expCardHover}20;
 
           p {
             font-size: 0.88rem;
+            line-height: 1.6;
           }
         }
         .project__env ul,
@@ -357,10 +379,19 @@ const Wrapper = styled.section.attrs({ id: "portfolio" })`
         .project__stack ul li {
           font-size: 0.799rem;
           color: ${({ theme }: Props) => theme.expCardHover};
+          background: ${({ theme }: Props) => theme.expCardHover}10;
+          padding: 0.3em 0.6em;
+          border-radius: 4px;
+          transition: all 0.2s ease;
         }
         .project__env ul a {
           font-size: 1.6rem;
           color: ${({ theme }: Props) => theme.txtPrimary400};
+          transition: all 0.2s ease;
+        }
+        .project__env ul a:hover {
+          color: ${({ theme }: Props) => theme.expCardHover};
+          transform: translateY(-2px);
         }
       }
 

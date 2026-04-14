@@ -49,52 +49,52 @@ const Wrapper = styled.section.attrs({id: 'about'})`
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         display: block;
         position: relative;
-        width: 280px;
-        border-radius: 1rem;
-        height: 320px;
+        width: 220px;
+        border-radius: 0.8rem;
+        height: 250px;
         background: linear-gradient(135deg, ${({theme}: Props) => theme.expCard} 0%, ${({theme}: Props) => theme.expCardHover} 100%);
-        padding: 0.4rem;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.12), 0 5px 15px rgba(0,0,0,0.08);
+        padding: 0.3rem;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.05);
 
         @media(min-width: 50em){
             &:hover{
-                transform: translateY(-5px);
-                box-shadow: 0 25px 50px rgba(0,0,0,0.18), 0 10px 25px rgba(0,0,0,0.12);
+                transform: translateY(-3px);
+                box-shadow: 0 12px 30px rgba(0,0,0,0.12), 0 5px 15px rgba(0,0,0,0.08);
                 
                 &::after{
-                    top:1.5em;
-                    left:1.5em;
-                    opacity: 0.8;
+                    top:1em;
+                    left:1em;
+                    opacity: 0.7;
                 }
             }
     
             &::after{
                 z-index: -1;
                 position: absolute;
-                border: 3px solid ${({theme}: Props) => theme.expCardHover};
-                top:2em;
-                left:2em;
+                border: 2px solid ${({theme}: Props) => theme.expCardHover};
+                top:1.5em;
+                left:1.5em;
                 content: '';
                 height: inherit;
                 width: inherit;
                 border-radius: inherit;
                 transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                opacity: 0.6;
+                opacity: 0.5;
             }
         }
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 0.6rem;
-            filter: grayscale(20%) brightness(1.05) contrast(1.1);
-            -webkit-filter: grayscale(20%) brightness(1.05) contrast(1.1);
+            border-radius: 0.5rem;
+            filter: grayscale(15%) brightness(1.02) contrast(1.05);
+            -webkit-filter: grayscale(15%) brightness(1.02) contrast(1.05);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover{
-                filter: grayscale(0%) brightness(1.1) contrast(1.15);
-                -webkit-filter: grayscale(0%) brightness(1.1) contrast(1.15);
-                transform: scale(1.02);
+                filter: grayscale(0%) brightness(1.05) contrast(1.08);
+                -webkit-filter: grayscale(0%) brightness(1.05) contrast(1.08);
+                transform: scale(1.01);
             }
 
         }
