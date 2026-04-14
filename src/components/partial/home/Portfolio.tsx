@@ -251,19 +251,21 @@ const projects: Wp = {
 };
 
 const ImageGallery = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-top: 1rem;
+  align-items: center;
   
   img {
-    width: 100%;
-    height: 80px;
+    width: 100px;
+    height: 70px;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     border: 1px solid ${({ theme }: Props) => theme.expCardHover}30;
     transition: all 0.3s ease;
     cursor: pointer;
+    flex-shrink: 0;
     
     &:hover {
       transform: scale(1.05);
@@ -272,7 +274,8 @@ const ImageGallery = styled.div`
     }
     
     @media (max-width: 768px) {
-      height: 60px;
+      width: 80px;
+      height: 56px;
     }
   }
 `;
