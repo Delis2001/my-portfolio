@@ -252,20 +252,18 @@ const projects: Wp = {
 
 const ImageGallery = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.4rem;
   margin-top: 1rem;
-  align-items: center;
   
   img {
-    width: 100px;
-    height: 70px;
+    width: 120px;
+    height: 60px;
     object-fit: cover;
     border-radius: 0.4rem;
     border: 1px solid ${({ theme }: Props) => theme.expCardHover}30;
     transition: all 0.3s ease;
     cursor: pointer;
-    flex-shrink: 0;
     
     &:hover {
       transform: scale(1.05);
@@ -274,8 +272,8 @@ const ImageGallery = styled.div`
     }
     
     @media (max-width: 768px) {
-      width: 80px;
-      height: 56px;
+      width: 100px;
+      height: 50px;
     }
   }
 `;
@@ -363,11 +361,15 @@ const Wrapper = styled.section.attrs({ id: "portfolio" })`
 
       &__image {
         grid-area: 1 / 1 / 2 / 8;
-        height: 100%;
+        height: 280px;
         position: relative;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        
+        @media (max-width: 768px) {
+          height: 200px;
+        }
       }
 
       &__content {
