@@ -211,33 +211,46 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/your-username/flutter-todo-app",
+          link: "https://github.com/Delis2001/flutter-todo-app",
         },
       ],
     },
     {
-      name: "Flutter Calculator",
+      name: "News App",
       description:
-        "A clean and functional calculator app built with Flutter, demonstrating basic UI layout and state handling.",
-      stack: ["Flutter", "Dart", "StatefulWidget", "Math Expressions"],
-      cover: mlm,
+        "A modern news application built with Flutter, fetching real-time news updates with clean UI and offline support.",
+      stack: ["Flutter", "Dart", "News API", "Provider", "Local Caching", "Responsive Design"],
+      cover: news,
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/your-username/flutter-calculator",
+          link: "https://github.com/Delis2001/flutter-news-app",
         },
       ],
     },
     {
-      name: "Flutter Notes App",
+      name: "Meal Planning App",
       description:
-        "A simple notes application with local storage using Flutter and SQLite, great for beginners.",
-      stack: ["Flutter", "Dart", "SQLite", "Provider", "CRUD Operations"],
-      cover: mlm,
+        "A comprehensive meal planning application with Flutter, featuring recipe management, meal scheduling, and nutritional tracking.",
+      stack: ["Flutter", "Dart", "SQLite", "Provider", "Meal Database API", "Calendar Integration"],
+      cover: curr,
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/your-username/flutter-notes-app",
+          link: "https://github.com/Delis2001/flutter-meal-app",
+        },
+      ],
+    },
+    {
+      name: "Netflix Clone",
+      description:
+        "A Netflix-inspired streaming app clone built with Flutter, showcasing video browsing, user authentication, and content management.",
+      stack: ["Flutter", "Dart", "Video Streaming", "Firebase", "Authentication", "Material Design", "State Management"],
+      cover: nova,
+      environment: [
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/flutter-netflix-clone",
         },
       ],
     },

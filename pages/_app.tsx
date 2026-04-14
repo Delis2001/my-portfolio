@@ -6,19 +6,19 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeHookProvider>
       <NextSeo
-        title="Flutter Developer Portfolio"
-        description="Portfolio Website showcasing Flutter development projects and expertise"
-        canonical="https://yourportfolio.com"
+        title="Nwoye Fidelis Chidera - Flutter Developer Portfolio"
+        description="Portfolio Website for Nwoye Fidelis Chidera - Flutter Development Projects"
+        canonical="https://fidelischidera.com"
         openGraph={{
-          title: "Flutter Developer",
+          title: "Nwoye Fidelis Chidera",
           description:
-            "I'm a Flutter Developer specializing in building scalable, high-performance mobile and web applications.",
-          url: "https://yourportfolio.com",
+            "I'm Nwoye Fidelis Chidera, a Flutter Developer specializing in building scalable, high-performance mobile and web applications.",
+          url: "https://fidelischidera.com",
           type: "profile",
           profile: {
-            firstName: "Your",
-            lastName: "Name",
-            username: "yourusername",
+            firstName: "Nwoye",
+            lastName: "Fidelis Chidera",
+            username: "nwoyefidelis",
             gender: "male",
           },
           images: [

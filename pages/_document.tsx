@@ -7,7 +7,7 @@ const Doc: NextPage = () => {
   return (
     <Html lang="en" style={{ scrollBehavior: "smooth" }}>
       <Head>
-        <meta name="application-name" content="Flutter Developer Portfolio" />
+        <meta name="application-name" content="Nwoye Fidelis Chidera - Flutter Developer Portfolio" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="PWA App" />

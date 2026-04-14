@@ -115,7 +115,7 @@ const About= () => {
                         <div className="about__details">
                             <h2 className="section__title"><span className="deco">01. </span>  About me <span className="line"></span></h2>
                            <p>
-Hello! Thanks for taking the time to visit my portfolio. I&apos;m a passionate Flutter Developer focused on building modern, scalable mobile and web applications. I enjoy solving real-world problems through clean, efficient code and continuously improving my skills to deliver high-quality user experiences.
+Hello! Thanks for taking the time to visit my portfolio. My name is Nwoye Fidelis Chidera, a passionate Flutter Developer focused on building modern, scalable mobile and web applications. I enjoy solving real-world problems through clean, efficient code and continuously improving my skills to deliver high-quality user experiences.
 </p>
 
 <p>

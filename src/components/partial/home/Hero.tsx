@@ -77,16 +77,16 @@ const Hero = () => {
             <FadeIn delay={250}>
               <p className="text-primary-300">Hi, my name is</p>
               <h1 ref={glitch.ref}>
-                YOUR NAME
+                NWOYE FIDELIS 
                 <br />
-                HERE
+                CHIDERA
               </h1>
               <p className="me_txt">
-               Flutter Developer specializing in cross-platform mobile and web applications. Expert in building scalable e-commerce solutions, real-time communication systems, and performance-optimized user interfaces.
+               Flutter Developer specializing in cross-platform mobile and web applications. Expert in building scalable e-commerce solutions and real-time applications.
               </p>
               <a
-                href="/assets/docs/Your_Name_CV.pdf"
-                download="Your_Name_CV.pdf"
+                href="/assets/docs/Nwoye_Fidelis_Chidera.pdf"
+                download="Nwoye_Fidelis_Chidera.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

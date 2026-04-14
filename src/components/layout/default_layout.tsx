@@ -108,7 +108,7 @@ const DefaultLayout = ({children}: any) => {
                 </FadeIn>
             </div>
             <FadeIn delay={200} className="email-me">
-                <a href="mailto:youremail@example.com">youremail@example.com</a>
+                <a href="mailto:nwoyefidelischidera@gmail.com">Nwoye Fidelis Chidera</a>
             </FadeIn>
         </Wrap>
     );
