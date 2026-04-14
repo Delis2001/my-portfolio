@@ -252,18 +252,20 @@ const projects: Wp = {
 
 const ImageGallery = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.3rem;
   margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
   
   img {
-    width: 120px;
-    height: 60px;
+    width: 90px;
+    height: 160px;
     object-fit: cover;
     border-radius: 0.4rem;
     border: 1px solid ${({ theme }: Props) => theme.expCardHover}30;
     transition: all 0.3s ease;
     cursor: pointer;
+    flex-shrink: 0;
     
     &:hover {
       transform: scale(1.05);
@@ -272,8 +274,8 @@ const ImageGallery = styled.div`
     }
     
     @media (max-width: 768px) {
-      width: 100px;
-      height: 50px;
+      width: 70px;
+      height: 120px;
     }
   }
 `;
