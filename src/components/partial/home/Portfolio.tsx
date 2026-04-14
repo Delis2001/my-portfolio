@@ -37,6 +37,7 @@ type Project = {
   stack: string[];
   environment: { icon: string; link: string; title?: string }[];
   cover: StaticImageData;
+  gallery?: StaticImageData[];
 };
 interface Wp {
   featured: Project[];
@@ -126,6 +127,7 @@ const projects: Wp = {
         "Multi-screen Design",
       ],
       cover: chatbot,
+      gallery: [chatbot, chatbot2, chatbot3],
       environment: [
         {
           icon: "bx bx-link-alt",
@@ -134,11 +136,6 @@ const projects: Wp = {
         {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/aichatbot",
-        },
-        {
-          icon: "bx bx-images",
-          link: "#chatbot-gallery",
-          title: "View More Screenshots"
         },
       ],
     },
@@ -158,6 +155,7 @@ const projects: Wp = {
         "Multi-screen Navigation",
       ],
       cover: doova,
+      gallery: [doova, doova2, doova3],
       environment: [
         {
           icon: "bx bx-link-alt",
@@ -166,11 +164,6 @@ const projects: Wp = {
         {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/doova",
-        },
-        {
-          icon: "bx bx-images",
-          link: "#doova-gallery",
-          title: "View More Screenshots"
         },
       ],
     },
@@ -256,6 +249,33 @@ const projects: Wp = {
     },
   ],
 };
+
+const ImageGallery = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+  
+  img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 1px solid ${({ theme }: Props) => theme.expCardHover}30;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transform: scale(1.05);
+      border-color: ${({ theme }: Props) => theme.expCardHover};
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    @media (max-width: 768px) {
+      height: 60px;
+    }
+  }
+`;
 
 const Wrapper = styled.section.attrs({ id: "portfolio" })`
   padding-block: 6em;
@@ -563,6 +583,7 @@ const ProjectItem = ({
   name,
   description,
   cover,
+  gallery,
   stack,
   environment,
 }: Project) => {
@@ -571,6 +592,17 @@ const ProjectItem = ({
       <li className="grid-12 project">
         <div className="project__image">
           <Image src={cover} alt={name} />
+          {gallery && gallery.length > 0 && (
+            <ImageGallery>
+              {gallery.map((image, index) => (
+                <Image 
+                  key={index} 
+                  src={image} 
+                  alt={`${name} screenshot ${index + 1}`} 
+                />
+              ))}
+            </ImageGallery>
+          )}
         </div>
         <div className="project__content">
           <p className="project-feat">Featured Project</p>
