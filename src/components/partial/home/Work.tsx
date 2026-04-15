@@ -12,7 +12,7 @@ import hoh from "../../../../public/assets/images/logo/hoh.png";
 import exai from "../../../../public/assets/images/logo/exai.svg";
 import fm from "../../../../public/assets/images/logo/featuremind.webp";
 import zarttech from "../../../../public/assets/images/logo/zarttech.png";
-import shopnest from "../../../../public/assets/images/logo/shopnest-logo.svg";
+import kodex from "../../../../public/assets/images/logo/kodex.png";
 
 type d = { icon: string; title: string };
 const skills: d[] = [
@@ -26,7 +26,7 @@ const skills: d[] = [
   },
   {
     icon: "bx bx-data",
-    title: "Backend Web<br/> Development",
+    title: "Backend Web<br/> Development<br/>(NestJS, Node.js)",
   },
 ];
 
@@ -245,18 +245,9 @@ const Work = () => {
           Companies I&#39;ve Worked With <span className="line"></span>
         </p>
         <div className="grid worked__with">
-          <Image src={fm} alt="Feature/Mind" />
-          <Image src={exai} alt="Examroom.AI" />
-          <Image src={zarttech} alt="Zarttech" />
           <a href="https://kodexafrica.com" target="_blank" rel="noopener noreferrer">
-            <Image src={shopnest} alt="Kodex Africa" />
+            <Image src={kodex} alt="Kodex Africa" />
           </a>
-          <Image src={oakSoft} alt="The Oaksoft " />
-          <Image src={bict} alt="Bonitas ICT" />
-          <Image src={cousant} alt="Cousant Connect" />
-          <Image src={nova} alt="Innovate Space" />
-          <Image src={hoh} alt="House of Hishighnex " />
-          <Image src={devAmplify} alt="Devamplify" />
         </div>
 
         <div className="grid expo even-columns">
