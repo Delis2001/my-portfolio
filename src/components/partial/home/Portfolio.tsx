@@ -39,21 +39,22 @@ interface Wp {
   featured: Project[];
   fun: Project[];
 }
+
 const projects: Wp = {
   featured: [
     {
       name: "Build Africa",
       description:
-        "A multivendor e-commerce marketplace for buying and selling building materials, built with Flutter for cross-platform performance.",
+        "A comprehensive multivendor e-commerce platform for building materials, built with Flutter and featuring real-time inventory management, payment processing, and vendor dashboards.",
       stack: [
         "Flutter",
         "Dart",
-        "BLoC Pattern",
         "Firebase",
-        "Flutter Web",
-        "State Management",
-        "REST API Integration",
-        "Responsive Design",
+        "BLoC Pattern",
+        "REST APIs",
+        "Payment Gateway Integration",
+        "Real-time Database",
+        "Push Notifications",
       ],
       cover: market,
       environment: [
@@ -61,49 +62,63 @@ const projects: Wp = {
           icon: "bx bx-link-alt",
           link: "https://buildafrica.store",
         },
-      ],
-    },
-    {
-      name: "Shopnest Vendor Portal",
-      description:
-        "A comprehensive vendor management portal for Shopnest multivendor e-commerce platform, built with Flutter for seamless cross-platform experience.",
-      stack: [
-        "Flutter",
-        "Dart",
-        "Provider",
-        "WebSockets",
-        "Flutter Web",
-        "Real-time Communication",
-        "Dashboard UI",
-        "Data Management",
-      ],
-      cover: vendor,
-      environment: [
         {
-          icon: "bx bx-link-alt",
-          link: "https://vendor.shopnest.africa",
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/buildafrica",
         },
       ],
     },
     {
-      name: "Shopnest Mall App",
+      name: "AI Chatbot",
       description:
-        "Consumer-facing multivendor e-commerce mobile app where users can browse and purchase products from various vendors.",
+        "An intelligent conversational AI chatbot built with Flutter, featuring natural language processing and real-time responses with multiple UI screens showcasing different chat functionalities.",
       stack: [
         "Flutter",
         "Dart",
-        "GetX",
-        "Payment Gateway Integration",
-        "Push Notifications",
-        "Local Storage",
-        "E-commerce Features",
-        "Mobile-First Design",
+        "AI Integration",
+        "Chat UI",
+        "Real-time Messaging",
+        "State Management",
+        "API Integration",
+        "Natural Language Processing",
+        "Multi-screen Design",
       ],
-      cover: mall,
+      cover: chatbot,
       environment: [
         {
           icon: "bx bx-link-alt",
-          link: "https://mall.shopnest.africa",
+          link: "https://github.com/Delis2001/aichatbot",
+        },
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/aichatbot",
+        },
+      ],
+    },
+    {
+      name: "Doova App",
+      description:
+        "A modern mobile application built with Flutter, showcasing advanced UI patterns, smooth animations, and professional user experience across multiple screens.",
+      stack: [
+        "Flutter",
+        "Dart",
+        "Material Design",
+        "State Management",
+        "Responsive UI",
+        "Advanced Animations",
+        "Local Database",
+        "Clean Architecture",
+        "Multi-screen Navigation",
+      ],
+      cover: doova,
+      environment: [
+        {
+          icon: "bx bx-link-alt",
+          link: "https://github.com/Delis2001/doova",
+        },
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/doova",
         },
       ],
     },
@@ -135,40 +150,6 @@ const projects: Wp = {
     },
   ],
   fun: [
-    {
-      name: "AI Chatbot",
-      description:
-        "An intelligent conversational AI chatbot built with Flutter, featuring natural language processing and real-time responses with multiple UI screens.",
-      stack: ["Flutter", "Dart", "AI Integration", "Chat UI", "Real-time Messaging", "State Management", "API Integration"],
-      cover: chatbot,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://github.com/Delis2001/aichatbot",
-        },
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/aichatbot",
-        },
-      ],
-    },
-    {
-      name: "Doova App",
-      description:
-        "A modern mobile application built with Flutter, showcasing advanced UI patterns, smooth animations, and professional user experience.",
-      stack: ["Flutter", "Dart", "Material Design", "State Management", "Responsive UI", "Advanced Animations", "Local Database"],
-      cover: doova,
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://github.com/Delis2001/doova",
-        },
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/doova",
-        },
-      ],
-    },
     {
       name: "Flutter Todo App",
       description:
@@ -337,15 +318,11 @@ const Wrapper = styled.section.attrs({ id: "portfolio" })`
 
       &__image {
         grid-area: 1 / 1 / 2 / 8;
-        height: 350px;
+        height: 100%;
         position: relative;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-        
-        @media (max-width: 768px) {
-          height: 250px;
-        }
       }
 
       &__content {

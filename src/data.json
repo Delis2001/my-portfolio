@@ -1,45 +1,17 @@
 {
   "experience": [
     {
-      "company": "Kodex Africa",
+      "company": "Shopnest Africa",
       "title": "Senior Flutter Developer (Remote)",
-      "at": "@Kodex",
-      "link": "https://kodexafrica.com",
+      "at": "@Shopnest",
+      "link": "https://shopnest.africa",
       "duration": "June 2022 - Present",
       "roles": [
-        "Developed cross-platform Flutter applications for digital solutions serving enterprise clients across Africa",
-        "Built responsive UI components with Flutter Web support for management dashboards and analytics platforms",
-        "Implemented real-time data synchronization and API integrations for seamless user experiences",
-        "Created scalable notification systems and background services for critical business operations",
+        "Developed cross-platform Flutter applications for multivendor e-commerce platform serving thousands of daily active users",
+        "Built responsive UI components with Flutter Web support for vendor management dashboard",
+        "Implemented real-time chat functionality using WebSocket integration for vendor-customer communication",
+        "Created scalable notification system for email and SMS delivery using Flutter background services",
         "Optimized app performance resulting in 40% faster load times and reduced memory usage"
-      ]
-    },
-    {
-      "company": "Doova App",
-      "title": "Flutter Developer (Personal Project)",
-      "at": "@Doova",
-      "link": "https://github.com/Delis2001/doova",
-      "duration": "January 2023 - Present",
-      "roles": [
-        "Developed modern mobile application with Flutter showcasing advanced UI patterns and animations",
-        "Implemented clean architecture with proper state management and responsive design",
-        "Created professional user experience with smooth transitions and micro-interactions",
-        "Built cross-platform compatibility for both iOS and Android platforms",
-        "Optimized performance and memory management for smooth user interactions"
-      ]
-    },
-    {
-      "company": "AI Chatbot",
-      "title": "Flutter Developer (Personal Project)",
-      "at": "@AIChatbot",
-      "link": "https://github.com/Delis2001/aichatbot",
-      "duration": "October 2023 - Present",
-      "roles": [
-        "Built intelligent conversational AI chatbot with Flutter and natural language processing",
-        "Implemented real-time messaging with WebSocket integration for instant responses",
-        "Created responsive chat UI with multiple screen layouts and user interactions",
-        "Integrated AI APIs for natural language understanding and response generation",
-        "Developed scalable architecture supporting multiple chat sessions and concurrent users"
       ]
     },
     {
