@@ -15,6 +15,34 @@
       ]
     },
     {
+      "company": "Doova App",
+      "title": "Flutter Developer (Personal Project)",
+      "at": "@Doova",
+      "link": "https://github.com/Delis2001/doova",
+      "duration": "January 2023 - Present",
+      "roles": [
+        "Developed modern mobile application with Flutter showcasing advanced UI patterns and animations",
+        "Implemented clean architecture with proper state management and responsive design",
+        "Created professional user experience with smooth transitions and micro-interactions",
+        "Built cross-platform compatibility for both iOS and Android platforms",
+        "Optimized performance and memory management for smooth user interactions"
+      ]
+    },
+    {
+      "company": "AI Chatbot",
+      "title": "Flutter Developer (Personal Project)",
+      "at": "@AIChatbot",
+      "link": "https://github.com/Delis2001/aichatbot",
+      "duration": "October 2023 - Present",
+      "roles": [
+        "Built intelligent conversational AI chatbot with Flutter and natural language processing",
+        "Implemented real-time messaging with WebSocket integration for instant responses",
+        "Created responsive chat UI with multiple screen layouts and user interactions",
+        "Integrated AI APIs for natural language understanding and response generation",
+        "Developed scalable architecture supporting multiple chat sessions and concurrent users"
+      ]
+    },
+    {
       "company": "Build Africa",
       "title": "Flutter Lead Developer",
       "at": "@BuildAfrica",

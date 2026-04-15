@@ -329,14 +329,14 @@ const Wrapper = styled.section.attrs({ id: "portfolio" })`
 
       &__image {
         grid-area: 1 / 1 / 2 / 8;
-        height: 280px;
+        height: 350px;
         position: relative;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 8px 24px rgba(0,0,0,0.1);
         
         @media (max-width: 768px) {
-          height: 200px;
+          height: 250px;
         }
       }
 
