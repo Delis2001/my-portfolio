@@ -76,6 +76,95 @@ const Wrapper = styled.section`
     z-index: 2;
   }
 
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 3em;
+  }
+
+  .experience-item {
+    background: ${({ theme }: Props) => theme.expCard};
+    border-radius: 12px;
+    padding: 2em;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid ${({ theme }: Props) => theme.expCardHover}20;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      border-color: ${({ theme }: Props) => theme.expCardHover};
+    }
+
+    h3 {
+      color: ${({ theme }: Props) => theme.txtPrimary400};
+      margin-bottom: 0.5em;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .company {
+      color: ${({ theme }: Props) => theme.expCardHover};
+      font-weight: 500;
+      margin-bottom: 0.3em;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: ${({ theme }: Props) => theme.txtPrimary400};
+        }
+      }
+    }
+
+    .duration {
+      color: ${({ theme }: Props) => theme.txtPrimary300};
+      font-size: 0.9rem;
+      margin-bottom: 1.5em;
+      font-weight: 500;
+    }
+
+    .roles {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          position: relative;
+          padding-left: 1.5em;
+          margin-bottom: 0.8em;
+          color: ${({ theme }: Props) => theme.txtPrimary300};
+          line-height: 1.6;
+
+          &::before {
+            content: "£";
+            position: absolute;
+            left: 0;
+            color: ${({ theme }: Props) => theme.expCardHover};
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .experience-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+    }
+
+    .experience-item {
+      padding: 1.5em;
+    }
+  }
+
   .expo {
     margin-top: 6em;
     display: none;
