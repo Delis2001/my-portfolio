@@ -143,6 +143,10 @@ const projects: Wp = {
       cover: chatbot,
       environment: [
         {
+          icon: "bx bx-link-alt",
+          link: "https://github.com/Delis2001/aichatbot",
+        },
+        {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/aichatbot",
         },
@@ -155,6 +159,10 @@ const projects: Wp = {
       stack: ["Flutter", "Dart", "Material Design", "State Management", "Responsive UI", "Advanced Animations", "Local Database"],
       cover: doova,
       environment: [
+        {
+          icon: "bx bx-link-alt",
+          link: "https://github.com/Delis2001/doova",
+        },
         {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/doova",
