@@ -1,11 +1,11 @@
 {
   "experience": [
     {
-      "company": "Shopnest Africa",
-      "title": "Senior Flutter Developer (Remote)",
-      "at": "@Shopnest",
-      "link": "https://shopnest.africa",
-      "duration": "June 2022 - Present",
+      "company": "Kodex Africa",
+      "title": "Flutter Developer (Remote)",
+      "at": "@Kodex",
+      "link": "https://kodexafrica.com",
+      "duration": "April 2024 - Present",
       "roles": [
         "Developed cross-platform Flutter applications for multivendor e-commerce platform serving thousands of daily active users",
         "Built responsive UI components with Flutter Web support for vendor management dashboard",
