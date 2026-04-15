@@ -3,16 +3,11 @@ import { Props } from "../../../theme/styling/GlobalStyle";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import { Container } from "../../Container";
-import nova from "../../../../public/assets/images/logo/nova.png";
-import bict from "../../../../public/assets/images/logo/bict.png";
-import cousant from "../../../../public/assets/images/logo/cousent.png";
-import devAmplify from "../../../../public/assets/images/logo/dev_amplify.png";
-import oakSoft from "../../../../public/assets/images/logo/oak_soft.png";
-import hoh from "../../../../public/assets/images/logo/hoh.png";
-import exai from "../../../../public/assets/images/logo/exai.svg";
-import fm from "../../../../public/assets/images/logo/featuremind.webp";
-import zarttech from "../../../../public/assets/images/logo/zarttech.png";
-import shopnest from "../../../../public/assets/images/logo/shopnest-logo.svg";
+import experienceData from "../../../data.json";
+import chatbot from "../../../../public/assets/images/chatbot.png";
+import doova from "../../../../public/assets/images/doova.png";
+import buildafrica from "../../../../public/assets/images/market.png";
+import kodex from "../../../../public/assets/images/logo/kodex.png";
 
 type d = { icon: string; title: string };
 const skills: d[] = [
@@ -147,52 +142,39 @@ const Wrapper = styled.section`
 `;
 
 const Work = () => {
-  return (
-    // <Fade ssrFadeout bottom>
-    <Wrapper>
-      <h1 className="side">Work</h1>
-      <Container>
-        <p className="flex intro">
-          Companies I&#39;ve Worked With <span className="line"></span>
-        </p>
-        <div className="grid worked__with">
-          <Image src={fm} alt="Feature/Mind" />
-          <Image src={exai} alt="Examroom.AI" />
-          <Image src={zarttech} alt="Zarttech" />
-          <Image src={shopnest} alt="Shopnest" />
-          <Image src={oakSoft} alt="The Oaksoft " />
-          <Image src={bict} alt="Bonitas ICT" />
-          <Image src={cousant} alt="Cousant Connect" />
-          <Image src={nova} alt="Innovate Space" />
-          <Image src={hoh} alt="House of Hishighnex " />
-          <Image src={devAmplify} alt="Devamplify" />
-        </div>
+  const experience = experienceData.experience;
 
-        <div className="grid expo even-columns">
-          <Fade ssrFadeout bottom>
-            <div className="expo__years">
-              <p className="yr flex">
-                3 <span>+</span>
-              </p>
-              <p>Years Experience Working.</p>
-            </div>
-          </Fade>
-          <div className="expo__skill-set">
-            <p>
-             I have worked in a full-capacity role as a Flutter mobile application developer across all the aforementioned organizations
-            </p>
-            <Fade ssrFadeout bottom>
-              <div className="skills even-columns grid">
-                {skills.map((s) => (
-                  <SkillWrap {...s} key={s.title} />
-                ))}
+  return (
+    <Wrapper>
+      <h1 className="side">Some Things I&apos;ve Built</h1>
+      <Container>
+        <div className="experience-grid">
+          {experience.map((item, index) => (
+            <Fade ssrFadeout bottom key={index} delay={index * 100}>
+              <div className="experience-item">
+                <div className="company">
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.company}
+                    <i className="bx bx-link-external" style={{ marginLeft: '0.5em', fontSize: '0.9em' }}></i>
+                  </a>
+                </div>
+                
+                <h3>{item.title}</h3>
+                <div className="duration">{item.duration}</div>
+                
+                <div className="roles">
+                  <ul>
+                    {item.roles.map((role, roleIndex) => (
+                      <li key={roleIndex}>{role}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </Fade>
-          </div>
+          ))}
         </div>
       </Container>
     </Wrapper>
-    // </Fade>
   );
 };
 
