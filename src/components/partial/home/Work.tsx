@@ -248,7 +248,9 @@ const Work = () => {
           <Image src={fm} alt="Feature/Mind" />
           <Image src={exai} alt="Examroom.AI" />
           <Image src={zarttech} alt="Zarttech" />
-          <Image src={shopnest} alt="Shopnest" />
+          <a href="https://kodexafrica.com" target="_blank" rel="noopener noreferrer">
+            <Image src={shopnest} alt="Kodex Africa" />
+          </a>
           <Image src={oakSoft} alt="The Oaksoft " />
           <Image src={bict} alt="Bonitas ICT" />
           <Image src={cousant} alt="Cousant Connect" />
