@@ -21,12 +21,8 @@ import studypal from "../../../../public/assets/images/study_pal.png";
 import vendor from "../../../../public/assets/images/shopnest.png";
 import mall from "../../../../public/assets/images/mall.png";
 import tok from "../../../../public/assets/images/tok.png";
-import chatbot from "../../../../public/assets/images/chatbot1.png";
-import chatbot2 from "../../../../public/assets/images/chatbot2.png";
-import chatbot3 from "../../../../public/assets/images/chatbot3.png";
-import doova from "../../../../public/assets/images/doova1.png";
-import doova2 from "../../../../public/assets/images/doova2.png";
-import doova3 from "../../../../public/assets/images/doova3.png";
+import chatbot from "../../../../public/assets/images/chatbot.png";
+import doova from "../../../../public/assets/images/doova.png";
 import novate from "../../../../public/assets/images/novate.png";
 import noavicon from "../../../../public/assets/images/nova.png";
 import { Container } from "../../Container";
@@ -112,62 +108,6 @@ const projects: Wp = {
       ],
     },
     {
-      name: "AI Chatbot",
-      description:
-        "An intelligent conversational AI chatbot built with Flutter, featuring natural language processing and real-time responses with multiple UI screens showcasing different chat functionalities.",
-      stack: [
-        "Flutter",
-        "Dart",
-        "AI Integration",
-        "Chat UI",
-        "Real-time Messaging",
-        "State Management",
-        "API Integration",
-        "Natural Language Processing",
-        "Multi-screen Design",
-      ],
-      cover: chatbot,
-      gallery: [chatbot, chatbot2, chatbot3],
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://github.com/Delis2001/aichatbot",
-        },
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/aichatbot",
-        },
-      ],
-    },
-    {
-      name: "Doova App",
-      description:
-        "A modern mobile application built with Flutter, showcasing advanced UI patterns, smooth animations, and professional user experience across multiple screens.",
-      stack: [
-        "Flutter",
-        "Dart",
-        "Material Design",
-        "State Management",
-        "Responsive UI",
-        "Advanced Animations",
-        "Local Database",
-        "Clean Architecture",
-        "Multi-screen Navigation",
-      ],
-      cover: doova,
-      gallery: [doova, doova2, doova3],
-      environment: [
-        {
-          icon: "bx bx-link-alt",
-          link: "https://github.com/Delis2001/doova",
-        },
-        {
-          icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/doova",
-        },
-      ],
-    },
-    {
       name: "Portfolio Website",
       description:
         "A professional portfolio website built with Next.js and TypeScript, showcasing Flutter development projects with modern UI and responsive design.",
@@ -195,6 +135,32 @@ const projects: Wp = {
     },
   ],
   fun: [
+    {
+      name: "AI Chatbot",
+      description:
+        "An intelligent conversational AI chatbot built with Flutter, featuring natural language processing and real-time responses with multiple UI screens.",
+      stack: ["Flutter", "Dart", "AI Integration", "Chat UI", "Real-time Messaging", "State Management", "API Integration"],
+      cover: chatbot,
+      environment: [
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/aichatbot",
+        },
+      ],
+    },
+    {
+      name: "Doova App",
+      description:
+        "A modern mobile application built with Flutter, showcasing advanced UI patterns, smooth animations, and professional user experience.",
+      stack: ["Flutter", "Dart", "Material Design", "State Management", "Responsive UI", "Advanced Animations", "Local Database"],
+      cover: doova,
+      environment: [
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/doova",
+        },
+      ],
+    },
     {
       name: "Flutter Todo App",
       description:
@@ -590,7 +556,6 @@ const ProjectItem = ({
   name,
   description,
   cover,
-  gallery,
   stack,
   environment,
 }: Project) => {
@@ -599,17 +564,6 @@ const ProjectItem = ({
       <li className="grid-12 project">
         <div className="project__image">
           <Image src={cover} alt={name} />
-          {gallery && gallery.length > 0 && (
-            <ImageGallery>
-              {gallery.map((image, index) => (
-                <Image 
-                  key={index} 
-                  src={image} 
-                  alt={`${name} screenshot ${index + 1}`} 
-                />
-              ))}
-            </ImageGallery>
-          )}
         </div>
         <div className="project__content">
           <p className="project-feat">Featured Project</p>
