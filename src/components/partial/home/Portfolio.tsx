@@ -159,7 +159,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/flutter-todo-app",
+          link: "https://github.com/Delis2001/Flutter_internal.git",
         },
       ],
     },
@@ -185,7 +185,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/flutter-meal-app",
+          link: "https://github.com/Delis2001/Meal_app.git",
         },
       ],
     },
@@ -199,6 +199,19 @@ const projects: Wp = {
         {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/flutter-netflix-clone",
+        },
+      ],
+    },
+    {
+      name: "QR Building Info",
+      description:
+        "A QR code-based building information system built with Flutter, allowing users to scan QR codes and access detailed building information, floor plans, and amenities.",
+      stack: ["Flutter", "Dart", "QR Code Integration", "Firebase", "Real-time Database", "Material Design", "State Management", "Mobile Scanning"],
+      cover: market,
+      environment: [
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/qr_building_info.git",
         },
       ],
     },
