@@ -172,7 +172,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/flutter-news-app",
+          link: "https://github.com/Delis2001/newsify.git",
         },
       ],
     },
