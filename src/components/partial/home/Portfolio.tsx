@@ -50,7 +50,7 @@ const projects: Wp = {
         "Flutter",
         "Dart",
         "Firebase",
-        "BLoC Pattern",
+        "Riverpod",
         "REST APIs",
         "Payment Gateway Integration",
         "Real-time Database",
@@ -87,7 +87,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bx-link-alt",
-          link: "https://github.com/Delis2001/aichatbot",
+          link: "https://aichatbot-99dec.web.app",
         },
         {
           icon: "bx bxl-github",
@@ -114,7 +114,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bx-link-alt",
-          link: "https://github.com/Delis2001/doova",
+          link: "https://github.com/Delis2001/doova/raw/main/release/app-release.apk",
         },
         {
           icon: "bx bxl-github",
@@ -154,7 +154,7 @@ const projects: Wp = {
       name: "Flutter Todo App",
       description:
         "A simple todo application built with Flutter and BLoC pattern, perfect for learning state management fundamentals.",
-      stack: ["Flutter", "Dart", "BLoC", "Hive", "Clean Architecture"],
+      stack: ["Flutter", "Dart", "Provider", "Hive", "Clean Architecture"],
       cover: hse,
       environment: [
         {

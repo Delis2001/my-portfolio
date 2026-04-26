@@ -20,13 +20,13 @@ const Footer = () => {
     return (
         <Wrapper>
             <Container>
-                <p className="text-center">Designed & Built with passion by Nwoye Fidelis Chidera ©{new Date().getFullYear()}</p>
+                <p className="text-center">Designed & Built with passion by Nwoye Fidelis Chidera &copy;{new Date().getFullYear()}</p>
 
                 <ul role='list' className="flex">
-                    <li><a href="https://www.linkedin.com/in/yourprofile" target='_blank' referrerPolicy='no-referrer' rel="noreferrer"><i className='bx bxl-linkedin-square' ></i></a></li>
-                    <li><a href="https://github.com/yourusername" target='_blank'  referrerPolicy='no-referrer' rel="noreferrer"><i className='bx bxl-github'></i></a></li>
-                    <li><a href="https://wa.me/yourphonenumber" target='_blank' referrerPolicy='no-referrer' rel="noreferrer"><i className='bx bxl-whatsapp'></i></a></li>
-                    <li><a href="tel:+yourphonenumber"><i className='bx bx-phone'></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/fidelis-chidera-622242330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target='_blank' referrerPolicy='no-referrer' rel="noreferrer"><i className='bx bxl-linkedin-square' ></i></a></li>
+                    <li><a href="https://github.com/Delis2001" target='_blank'  referrerPolicy='no-referrer' rel="noreferrer"><i className='bx bxl-github'></i></a></li>
+                    <li><a href="https://wa.link/nuefg7" target='_blank' referrerPolicy='no-referrer' rel="noreferrer"><i className='bx bxl-whatsapp'></i></a></li>
+                    <li><a href="tel:+2348121685344"><i className='bx bx-phone'></i></a></li>
                 </ul>
             </Container>
         </Wrapper>
