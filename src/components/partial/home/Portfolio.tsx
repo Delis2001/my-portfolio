@@ -159,7 +159,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/Flutter_internal",
+          link: "https://github.com/Delis2001/Flutter_internal.git",
         },
       ],
     },
@@ -172,7 +172,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/newsify",
+          link: "https://github.com/Delis2001/newsify.git",
         },
       ],
     },
@@ -185,7 +185,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/Meal_app",
+          link: "https://github.com/Delis2001/Meal_app.git",
         },
       ],
     },
@@ -211,7 +211,7 @@ const projects: Wp = {
       environment: [
         {
           icon: "bx bxl-github",
-          link: "https://github.com/Delis2001/qr_building_info",
+          link: "https://github.com/Delis2001/qr_building_info.git",
         },
       ],
     },
