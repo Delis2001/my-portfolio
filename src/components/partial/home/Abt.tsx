@@ -5,10 +5,10 @@ import Fade from 'react-reveal/Fade';
 import kingsley from '../../../../public/assets/images/kingsley.png'
 import { Props } from "../../../theme/styling/GlobalStyle";
 
-const Wrapper = styled.section.attrs({id: 'about'})`
+const Wrapper = styled.section.attrs({ id: 'about' })`
     padding-block: 6em;
     position:relative;
-    background-color: ${({theme}: Props) => theme.primaryBg};
+    background-color: ${({ theme }: Props) => theme.primaryBg};
     z-index:1;
     @media(min-width: 50em){
         padding-block: 16em 6em;
@@ -40,7 +40,7 @@ const Wrapper = styled.section.attrs({id: 'about'})`
                 top:0;
                 left:-1.2em;
                 position:absolute;
-                color: ${({theme}: Props) => theme.expCardHover};
+                color: ${({ theme }: Props) => theme.expCardHover};
             }
         }
     }
@@ -52,7 +52,7 @@ const Wrapper = styled.section.attrs({id: 'about'})`
         width: 220px;
         border-radius: 0.8rem;
         height: 250px;
-        background: linear-gradient(135deg, ${({theme}: Props) => theme.expCard} 0%, ${({theme}: Props) => theme.expCardHover} 100%);
+        background: linear-gradient(135deg, ${({ theme }: Props) => theme.expCard} 0%, ${({ theme }: Props) => theme.expCardHover} 100%);
         padding: 0.3rem;
         box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.05);
 
@@ -71,7 +71,7 @@ const Wrapper = styled.section.attrs({id: 'about'})`
             &::after{
                 z-index: -1;
                 position: absolute;
-                border: 2px solid ${({theme}: Props) => theme.expCardHover};
+                border: 2px solid ${({ theme }: Props) => theme.expCardHover};
                 top:1.5em;
                 left:1.5em;
                 content: '';
@@ -105,7 +105,7 @@ const Wrapper = styled.section.attrs({id: 'about'})`
     }
 `;
 
-const About= () => {
+const About = () => {
     return (
         <Wrapper>
             <Fade ssrFadeout bottom>
@@ -114,35 +114,38 @@ const About= () => {
                     <div className="about grid even-columns">
                         <div className="about__details">
                             <h2 className="section__title"><span className="deco">01. </span>  About me <span className="line"></span></h2>
-                           <p>
-Hello! Thanks for taking the time to visit my portfolio. My name is Nwoye Fidelis Chidera, a passionate Flutter Developer focused on building modern, scalable mobile and web applications. I enjoy solving real-world problems through clean, efficient code and continuously improving my skills to deliver high-quality user experiences.
-</p>
+                            <p>
+                                Hello, and thank you for visiting my portfolio. I&apos;m Nwoye Fidelis Chidera, a software developer focused on building scalable and user-centered applications. My primary strength is in mobile and cross-platform development using Flutter, where I&apos;ve built real-world applications with strong emphasis on performance, usability, and clean architecture.
+                            </p>
 
-<p>
-I am committed to growing as a developer, with a strong interest in building performant applications and staying up-to-date with modern technologies and best practices in the Flutter ecosystem.
-</p>
+                            <p>
+                                I am currently expanding my skill set into backend and modern web development, working with technologies like NestJS and Next.js. As I grow in this area, I&apos;m focused on understanding how to build complete, end-to-end systems that connect frontend interfaces with reliable backend services and APIs.
+                            </p>
 
-<p>
-My core focus is Flutter and Dart for cross-platform development, with extensive experience in building e-commerce solutions and real-time applications.
-</p>
+                            <p>
+                                I enjoy solving real-world problems through efficient and maintainable code, and I&apos;m committed to continuous learning and improving my ability to build scalable, production-ready applications.
+                            </p>
 
-<p>
-Below are some of the technologies, languages, and tools I work with:
-</p>
-                          <ul className="about__list" role='list'>
-  <li>Flutter (Cross-platform Mobile & Web Development)</li>
-  <li>Dart Programming Language</li>
-  <li>State Management (Bloc, Provider, Riverpod)</li>
-  <li>Backend Integration (REST APIs, Firebase Services)</li>
-  <li>Firebase (Authentication, Firestore, Cloud Functions)</li>
-  <li>Responsive & Adaptive UI Design</li>
-  <li>Material & Cupertino Design Systems</li>
-  <li>Local Storage (SQLite, Hive, SharedPreferences)</li>
-  <li>App Performance Optimization & Debugging</li>
-  <li>Version Control (Git & GitHub)</li>
-  <li>Clean Architecture & Code Structuring</li>
-  <li>Problem Solving & Algorithmic Thinking</li>
-</ul>
+                            <p>
+                                Below are some of the technologies and tools I work with:
+                            </p>
+
+                            <ul className="about__list" role="list">
+                                <li>Flutter (Cross-platform Mobile Development)</li>
+                                <li>Dart Programming Language</li>
+                                <li>Next.js & React (Learning & Building Web Applications)</li>
+                                <li>NestJS (Learning Backend Development & API Design)</li>
+                                <li>State Management (Bloc, Provider, Riverpod)</li>
+                                <li>Backend Integration (REST APIs, Firebase Services)</li>
+                                <li>Firebase (Authentication, Firestore, Cloud Functions)</li>
+                                <li>Responsive & Adaptive UI Design</li>
+                                <li>Material & Cupertino Design Systems</li>
+                                <li>Local Storage (SQLite, Hive, SharedPreferences)</li>
+                                <li>App Performance Optimization & Debugging</li>
+                                <li>Version Control (Git & GitHub)</li>
+                                <li>Clean Architecture & Code Structuring</li>
+                                <li>Problem Solving & Algorithmic Thinking</li>
+                            </ul>
                         </div>
                         <div className="about__me">
                             <div className="image_container">

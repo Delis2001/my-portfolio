@@ -82,7 +82,7 @@ const Hero = () => {
                 CHIDERA
               </h1>
               <p className="me_txt">
-               Flutter Developer specializing in cross-platform mobile and web applications. Expert in building scalable e-commerce solutions and real-time applications.
+             Full-Stack Developer focused on building scalable mobile, web, and backend applications using Flutter, Next.js, and NestJS.
               </p>
               <a
                 href="/assets/docs/Nwoye_Fidelis_Chidera.pdf"

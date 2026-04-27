@@ -246,7 +246,7 @@ const Work = () => {
         </p>
         <div className="grid worked__with">
           <a href="https://kodexafrica.com" target="_blank" rel="noopener noreferrer">
-            <Image src={kodex} alt="Kodex Africa" />
+            <Image src={kodex} alt="Kodex Africa" height={50} width={80} />
           </a>
         </div>
 
