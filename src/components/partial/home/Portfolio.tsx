@@ -25,6 +25,7 @@ import chatbot from "../../../../public/assets/images/chatbot.png";
 import doova from "../../../../public/assets/images/doova.png";
 import novate from "../../../../public/assets/images/novate.png";
 import noavicon from "../../../../public/assets/images/nova.png";
+import shophub from "../../../../public/assets/images/shophub.png";
 import { Container } from "../../Container";
 
 type Project = {
@@ -56,7 +57,7 @@ const projects: Wp = {
         "Real-time Database",
         "Push Notifications",
       ],
-      cover: market,
+      cover: shophub,
       environment: [
         {
           icon: "bx bx-link-alt",
@@ -134,7 +135,7 @@ const projects: Wp = {
         "React Hook Form",
         "Vite",
       ],
-      cover: market,
+      cover: shophub,
       environment: [
         {
           icon: "bx bx-link-alt",
@@ -251,7 +252,7 @@ const projects: Wp = {
         "React Hook Form",
         "Vite",
       ],
-      cover: market,
+      cover: shophub,
       environment: [
         {
           icon: "bx bx-link-alt",
