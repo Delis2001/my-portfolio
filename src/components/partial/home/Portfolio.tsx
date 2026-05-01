@@ -122,6 +122,30 @@ const projects: Wp = {
         },
       ],
     },
+     {
+      name: "ShopHub",
+      description:
+        "A modern e-commerce web application built with React, featuring authentication, cart management, and product browsing.",
+      stack: [
+        "React",
+        "React Router",
+        "Context API (State Management)",
+        "Riverpod",
+        "React Hook Form",
+        "Vite",
+      ],
+      cover: market,
+      environment: [
+        {
+          icon: "bx bx-link-alt",
+          link: "https://shophub-zeta-one.vercel.app",
+        },
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/ecommerce-react-website.git",
+        },
+      ],
+    },
     {
       name: "Portfolio Website",
       description:
@@ -212,6 +236,30 @@ const projects: Wp = {
         {
           icon: "bx bxl-github",
           link: "https://github.com/Delis2001/qr_building_info",
+        },
+      ],
+    },
+    {
+      name: "ShopHub",
+      description:
+        "A modern e-commerce web application built with React, featuring authentication, cart management, and product browsing.",
+      stack: [
+        "React",
+        "React Router",
+        "Context API (State Management)",
+        "Riverpod",
+        "React Hook Form",
+        "Vite",
+      ],
+      cover: market,
+      environment: [
+        {
+          icon: "bx bx-link-alt",
+          link: "https://shophub-zeta-one.vercel.app",
+        },
+        {
+          icon: "bx bxl-github",
+          link: "https://github.com/Delis2001/ecommerce-react-website.git",
         },
       ],
     },
