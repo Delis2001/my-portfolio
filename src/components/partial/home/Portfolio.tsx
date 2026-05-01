@@ -57,7 +57,7 @@ const projects: Wp = {
         "Real-time Database",
         "Push Notifications",
       ],
-      cover: mall,
+      cover: market,
       environment: [
         {
           icon: "bx bx-link-alt",
